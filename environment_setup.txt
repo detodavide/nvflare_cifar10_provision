@@ -1,0 +1,40 @@
+## install cuda 1.18 ubuntu 22.04 x86_64
+
+https://developer.nvidia.com/cuda-11-8-0-download-archive?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=22.04&target_type=deb_local
+
+## install nvidia driver
+
+## install pip3
+
+sudo apt install python3-pip
+
+## install virtualenv package
+
+pip3 install python-venv
+
+## generate venv
+
+python3 -m venv [venv-name]
+
+## activate venv
+
+source venv-name/bin/activate
+
+## requirements.txt 
+
+pip3 install -r requirements.txt
+
+nvflare[HE]>=2.3.0
+torch
+torchvision
+tensorboard
+tensorflow
+seaborn
+pandas
+
+## install tensorflow==2.12 & cudnn==8.6
+
+pip3 install nvidia-cudnn-cu11==8.6.0.163
+pip3 install tensorflow==2.12.*
+
+
