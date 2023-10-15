@@ -5,7 +5,7 @@
 ### follow the installer in environment_setup.txt, for the cuda installation there are several ways, remember to install the 11.8 version.
 
 - project folder located in workspaces/secure_workspaces
-- add to workspaces/secure_workspaces/admin@nvidia.com the "local" folder, required by nvflare.fuel.hci.tools.admin
+- add to /admin@nvidia.com the "local" folder, required by nvflare.fuel.hci.tools.admin
 
 
 ## Relevant Features Change
