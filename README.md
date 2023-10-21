@@ -21,7 +21,7 @@
 - in startup/sub_start.sh file change the PYTHONPATH ( line 5) to :
 <code>export PYTHONPATH="${PYTHONPATH}:${PWD}/../local/custom"</code>
 required to find the learners etc..
-- moved the pt/learner... folder in the local/custom folder of each client, server
+- moved the pt/... folder in the local/custom folder of each client, server. 
 - jobs folder moved to transfer folder in admin@nvidia.com 
 
 ## Download and set-up the CIFAR10 data
@@ -38,3 +38,7 @@ After that put the generated folder in the following directories:
 Remember to keep a copy for the CIFAR10_inference.ipynb in the main directory
 
 best_local_model_30_epoch.pt is just an example of a pre-trained model with 30 epochs
+
+## Python custom objects
+
+What you will find in the custom/pt folder is a modified version of the original nvflare_cifar10
