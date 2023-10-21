@@ -5,7 +5,7 @@
 ### follow the installer in environment_setup.txt, for the cuda installation there are several ways, remember to install the 11.8 version.
 
 - project folder located in workspaces/secure_workspaces
-- add to workspaces/secure_workspaces/admin@nvidia.com the "local" folder, required by nvflare.fuel.hci.tools.admin
+- add to /admin@nvidia.com the "local" folder, required by nvflare.fuel.hci.tools.admin
 
 
 ## Relevant Features Change
@@ -21,8 +21,8 @@
 - in startup/sub_start.sh file change the PYTHONPATH ( line 5) to :
 <code>export PYTHONPATH="${PYTHONPATH}:${PWD}/../local/custom"</code>
 required to find the learners etc..
-- moved the pt/learner... folder in the local/custom folder of each client, server
-- jobs folder moved to transfer folder in admin@nvidia.com 
+- Each client, server must have a custom/pt in their local folder with CIFAR-10-images, learners, network, utils.
+- move jobs to transfer folder in admin@nvidia.com/
 
 ## Download and set-up the CIFAR10 data
 
@@ -38,3 +38,9 @@ After that put the generated folder in the following directories:
 Remember to keep a copy for the CIFAR10_inference.ipynb in the main directory
 
 best_local_model_30_epoch.pt is just an example of a pre-trained model with 30 epochs
+
+## Custom/pt
+
+What you will find in the custom/pt folder is a modified version of the original nvflare_cifar10 by nvidia.
+You can find the custom version i made in the /localhost_text1/prod_00/localhost/local.
+Remember to put the CIFAR-10-images folder in the custom/pt of each client, server.
