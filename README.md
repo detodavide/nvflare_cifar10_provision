@@ -21,8 +21,8 @@
 - in startup/sub_start.sh file change the PYTHONPATH ( line 5) to :
 <code>export PYTHONPATH="${PYTHONPATH}:${PWD}/../local/custom"</code>
 required to find the learners etc..
-- moved the pt/... folder in the local/custom folder of each client, server. 
-- jobs folder moved to transfer folder in admin@nvidia.com 
+- Each client, server must have a custom/pt in their local folder with CIFAR-10-images, learners, network, utils.
+- move jobs to transfer folder in admin@nvidia.com/
 
 ## Download and set-up the CIFAR10 data
 
